@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Space+Grotesk&family=Days+One&family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900">
+    <script src="script.js"></script>
+    <!--Whole design container--> <!--border border-white -->
+    <design class="container mx-auto p-8 flex flex-col">
+      <!--Header section-->
+      <header class="header bg-gray-900 w-full h-[600px] sm:h-[400px] md:h-[500px] lg:h-[600px] p-10 bg-cover bg-center sm:bg-fixed md:bg-fixed" style="background-image: url('hogwarts\ entering.jpg');">
+        <div class="header__content flex flex-col h-full p-2 gap-8 items-center justify-center text-center">
+          <div class="header__icon w-20 h-20">
+            <img src="platform.png" class="w-full h-full object-cover rounded-full" alt="Platform Logo">
+          </div>
+          <h1 class="eagle-lake-text text-4xl md:text-5xl lg:text-6xl w-[80%] text-white">
+            Welcome to the magic world of Productivity!
+          </h1>
+          <button class="rounded-lg bg-yellow-500 header__button border-4 border-yellow-700 hover:border-double px-4 py-2 space-grotesk">
+            Begin your journey
+          </button>
+        </div>
+      </header>
+      
+      
+      <!--concept section-->
+      <section class="concept relative w-full h-[500px] md:h-[600px] bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('wand.jpg');">
+        <div class="concept__container flex flex-col md:flex-row h-full p-2 md:p-8 gap-4 md:gap-8 items-center justify-center">
+          <div class="flex flex-col md:w-[50%]">
+            <style>
+              .font-creepster {
+                font-family: 'Creepster', cursive;
+              }
+            </style>
+            <h3 class="text-white font-creepster text-3xl md:text-5xl concept__h3">
+              Conquer Your Tasks
+            </h3>
+            <p class="text-white space-grotesk text-lg md:text-xl concept__p1">
+              Step into the enchanting world of Wizard Study Timer, where we've harnessed the essence of successful learning methods and engaging productivity tools.
+            </p>
+            <p class="text-white space-grotesk text-lg md:text-xl concept__p1">
+              Harness the power of Pomodoro spells to vanquish distractions and focus on what truly matters - learning.
+            </p>
+            <p class="text-white space-grotesk text-lg md:text-xl concept__p1">
+              Do not overlook, even wizards need a break! Indulge in a well-deserved respite with phrases that will charm away lingering irritation.
+            </p>
+          </div>
+          <div class="flex w-[50%]">
+            <!-- Other content in the right column -->
+          </div>
+        </div>
+      </section>
+      
+      <!--action section-->
+      <section class="action bg-pink-50 w-full h-[250px] md:h-[300px] p-10 bg-cover" style="background-image: url('clouds.jpg');">
+        <div class="action__content flex flex-col md:flex-row h-full p-4 md:p-8 gap-4 md:gap-8 items-center justify-center">
+          <h1 class="action__heading w-full md:w-3/4 h-[100px] font-Barriecito text-xl md:text-3xl mb-2 text-center md:text-left">
+            Venture outside your comfort zone. The rewards are worth it.
+          </h1>
+          <div class="click flex flex-col md:flex-row md:p-1 gap-2">
+            <button class="bg-zinc-100 button mr-2 space-grotesk w-full md:w-[200px] border-4 border-sky-300 border-x-sky-700 px-4 py-2 text-center md:text-left">
+              Start Studying
+            </button>
+            <button class="bg-zinc-100 button border border-black space-grotesk w-full md:w-[200px] border-4 border-indigo-300 border-x-indigo-700 px-4 py-2 text-center md:text-left">
+              Explore Features
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <!--Studyroom section-->
+      <section class="studyroom w-full relative text-white" style="background-image: url('studybg.jpeg');">
+        <div class="studyroom__content flex flex-col md:flex-row p-2 gap-10">
+          <div class="studyroom--music w-full md:w-1/2">
+            <div class="iframe p-5">
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-[250px]" src="https://www.youtube.com/embed/BQrxsyGTztM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="studyroom--timer w-full md:w-1/2 flex flex-col p-5">
+            <div class="timer__block h-[250px] p-7">
+              <div id="timer" class="font-opsone text-4xl p-10">
+                Time is ticking!
+                <div id="timeDisplay" class="text-6xl">00:00:00</div>
+              </div>
+            </div>
+            <div class="buttons flex flex-row p-1 gap-[20px]">
+              <button id="startButton" class="text-white button mr-2 space-grotesk w-[100px] border-slate-600 bg-indigo-500 hover:border-transparent border-2">
+                Start
+              </button>
+              <button id="restartButton" class="text-white button mr-2 space-grotesk w-[100px] border border-slate-600 bg-amber-500 hover:border-transparent border-2">
+                Restart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+
+      <!--Features section-->
+      <features class="features bg-sky-100 w-full p-10">
+        <div class="features__content flex flex-col md:flex-row p-10 gap-10">
+          <div class="features--tasks flex flex-col md:w-1/2 gap-1 p-1">
+            <tasks--image class="w-full h-[300px] bg-center border border-black" style="background-image: url('book.jpeg');"></tasks--image>
+            <tasks--h2 class="h-[50px] font-creepster text-4xl text-center">TaskMaster</tasks--h2>
+            <tasks--p class="h-[70px] space-grotesk">Elevate your productivity with seamless task management and efficient organization</tasks--p>
+          </div>
+          <div class="features--tracker flex flex-col md:w-1/2 gap-1 p-1">
+            <tracker--image class="w-full h-[300px] bg-cover border border-black" style="background-image: url('timewaste.jpg');"></tracker--image>
+            <tracker--h2 class="h-[50px] font-creepster text-4xl text-center">Time-Waste Tracker</tracker--h2>
+            <tracker--p class="h-[70px] space-grotesk">Watch out, The Time-Waste Tracker helps you reclaim productivity by identifying time-draining activities.</tracker--p>
+          </div>
+        </div>
+      </features>
+      
+      <!--Reviews section-->
+      <reviews class="bg-green-400 w-full p-1">
+        <div class="work-in-progress-heading text-center space-grotesk text-5xl text-white mb-8">Work in Progress ;(</div>
+        <div class="reviews--boxes flex flex-col md:flex-row border border-black p-10 md:gap-x-36">
+          <boxes class="boxes__1 flex flex-col border border-black w-full md:w-[250px] p-5 gap-2 animate-slide mb-4 md:mb-0">
+            
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+          <boxes class="boxes__2 flex flex-col border border-black w-full md:w-[250px] p-5 gap-2 animate-slide mb-4 md:mb-0">
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+          <boxes class="boxes__3 flex flex-col border border-black w-full md:w-[250px] p-5 gap-2 animate-slide">
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+        </div>
+      </reviews>
+
+      
+    </design>
+  </body>
+</html>

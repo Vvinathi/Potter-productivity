@@ -1,0 +1,27 @@
+.eagle-lake-text {
+    font-family: 'Eagle Lake', cursive;
+  }
+  .space-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .font-creepster {
+    font-family: 'Creepster', cursive;
+  }
+  .font-Barriecito {
+    font-family: 'Barriecito', cursive;
+  }
+  .font-opsone{
+    font-family: 'Black Ops One', cursive;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .reviews--boxes {
+    animation: slide 10s linear infinite; 
+  }
